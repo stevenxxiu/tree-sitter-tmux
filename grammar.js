@@ -646,7 +646,7 @@ module.exports = grammar({
       command(
         $,
         choice("run-shell", "run"),
-        cmd_opts(options($, "bC"), $._delay, $._target_pane),
+        cmd_opts(options($, "bC"), $._delay, $._start_directory, $._target_pane),
         $._shell,
       ),
     save_buffer_directive: ($) =>
