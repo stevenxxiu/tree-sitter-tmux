@@ -5406,8 +5406,17 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "key"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "key"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "comment"
+            }
+          ]
         },
         {
           "type": "REPEAT",
@@ -5419,8 +5428,17 @@
                 "value": " "
               },
               {
-                "type": "SYMBOL",
-                "name": "key"
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "key"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "comment"
+                  }
+                ]
               }
             ]
           }
